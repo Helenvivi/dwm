@@ -37,11 +37,19 @@ static const char *colors[][3]      = {
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 /* launcher commands (They must be NULL terminated) */
-static const char* github[]      = { "google-chrome-stable", "www.github.com", NULL };
+static const char* chrome[]      = { "google-chrome-stable", "", NULL };
+static const char* telegram[]      = { "telegram-desktop", "", NULL };
+static const char* steam[]      = { "steam", "", NULL };
+static const char* code[]      = { "code", "", NULL };
+static const char* wps[]      = { "wps", "", NULL };
 
 static const Launcher launchers[] = {
        /* command       name to display */
-	{ github,         "Github" },
+	{ chrome,         "chrome" },
+	{telegram,        "telegram"},
+	{steam,            "steam"},
+	{code,               "code"},
+	{wps,                "wps"},
 };
 
 /* Lockfile */
